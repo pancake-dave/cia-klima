@@ -25,11 +25,11 @@
     }
     &__logo {
         position: absolute;
-        bottom: 1.3rem;
+        bottom: .7rem;
         left: 50%;
         transform: translateX(-50%);
         .logo-icon {
-            height: 3rem;
+            height: 4.4rem;
         }
     }
 }
@@ -40,6 +40,7 @@
 
 .nav-desktop { 
     position: fixed;
+    // top: 40px;
     width: 100%;
     display: none;
     padding: 0 3rem;
@@ -54,8 +55,8 @@
     }
     &__link {
         position: relative;
-        height: 9rem;
-        padding: 3.6rem 2.8rem;
+        height: 7rem;
+        padding: 2.6rem 2.8rem;
         transition: color .2s;
         transition-delay: 100ms;
         &::before {
@@ -86,7 +87,7 @@
         top: 50%;
         transform: translateY(-50%);
         .logo-icon {
-            height: 6rem;
+            height: 3.8rem;
         }
     }
 }
@@ -125,5 +126,19 @@
     .nav-desktop {
         display: block;
         padding: 0 4rem;
+    }
+}
+@media ($media-xlarge) {
+    .logo {
+        .logo-icon {
+            height: 6rem;
+        }
+
+    }
+    .nav-desktop { 
+        &__link {
+            height: 8rem;
+            padding: 3rem 2.8rem;
+        }
     }
 }

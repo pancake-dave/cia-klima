@@ -40,7 +40,7 @@
 @media ($media-large) {
     .header {
         &__separator {
-            height: 9rem;
+            height: 7rem;
         }
         &__hero {
             background-image: url("../../dist/img/jungle_xlarge.jpg");
@@ -54,6 +54,14 @@
             &__caption {
                 font-size: 3.8rem;
             }
+        }
+    }
+}
+
+@media ($media-xlarge) {
+    .header {
+        &__separator {
+            height: 8rem;
         }
     }
 }

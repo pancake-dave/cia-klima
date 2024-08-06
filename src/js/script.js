@@ -23,7 +23,7 @@ const handleDesktopNav = (e) => {
 		allSections.forEach((section) => {
 			const conditions = [
 				section.classList.contains(target) &&
-					section.offsetTop == currentPosition + 90,
+					section.offsetTop == currentPosition + 79,
 				section.classList.contains("home") &&
 					section.offsetTop == currentPosition,
 				window.innerHeight + window.scrollY >= document.body.scrollHeight,
