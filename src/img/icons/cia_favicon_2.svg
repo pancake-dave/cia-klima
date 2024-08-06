@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="125mm"
+   height="125mm"
+   viewBox="0 0 125 125"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="cia_favicon_2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.4437954"
+     inkscape:cx="347.00208"
+     inkscape:cy="221.63805"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-71.702084,-98.954166)">
+    <rect
+       style="fill:#000000;stroke-width:0.637563"
+       id="rect3"
+       width="125"
+       height="125"
+       x="71.702087"
+       y="98.954163"
+       ry="0.40748903" />
+    <path
+       id="path2"
+       style="font-size:11.3257px;font-family:'Zen Dots';-inkscape-font-specification:'Zen Dots, Normal';fill:#ffffff;stroke-width:0.94381"
+       d="m 101.44062,118.85957 c -7.26001,-0.037 -12.81513,1.6315 -16.66514,5.0049 -7.8506,6.87855 -7.79475,23.03568 0,29.8653 3.85001,3.3367 9.40513,5.0049 16.66514,5.0049 h 20.35017 v -7.15 h -19.74504 c -4.76667,0 -8.30537,-1.0084 -10.61538,-3.0251 -2.31,-2.0533 -3.4649,-5.3168 -3.4649,-9.7901 0,-4.4733 1.1549,-7.7181 3.4649,-9.7348 2.31001,-2.0167 5.84871,-3.0251 10.61538,-3.0251 h 19.19469 v -7.0399 z m 25.8501,0.2749 v 39.3253 h 8.79998 v -39.3253 z m 30.90974,0 -17.71003,39.3253 h 9.57047 l 3.73983,-8.3055 h 22.38519 l 3.73983,8.3055 h 9.56996 l -17.71003,-39.3253 z m 6.43526,6.8751 h 0.71521 l 7.64501,16.9948 h -16.00523 z"
+       sodipodi:nodetypes="cccsccscssscccccccccccccccccccccc" />
+    <path
+       id="path4"
+       style="fill:#06c7ff;stroke-width:1.96314"
+       d="M 110.2496 163.92694 L 117.25641 167.96752 L 111.2945 171.09498 L 100.93337 165.30929 L 97.010617 168.08328 L 97.010617 172.9543 L 102.82628 176.22283 L 93.167957 181.9553 L 93.167957 187.54669 L 98.226046 189.84991 L 107.65751 184.48331 L 107.65751 191.3785 L 111.94717 193.75975 L 116.15467 191.37385 L 116.15467 179.79574 L 122.32742 176.27038 L 122.32742 184.34017 L 129.50786 179.96731 L 129.50786 186.46355 L 119.37876 192.23271 L 119.37876 197.55487 L 123.52889 199.63691 L 129.6634 196.17304 L 129.6634 207.63797 L 133.94686 210.39956 L 134.54941 210.39956 L 138.83235 207.63797 L 138.83235 196.17304 L 144.96738 199.63691 L 149.11751 197.55487 L 149.11751 192.23271 L 138.98842 186.46355 L 138.98842 179.96731 L 146.16834 184.34017 L 146.16834 176.27038 L 152.34161 179.79574 L 152.34161 191.37385 L 156.5491 193.75975 L 160.83876 191.3785 L 160.83876 184.48331 L 170.26971 189.84991 L 175.32832 187.54669 L 175.32832 181.9553 L 165.66999 176.22283 L 171.48514 172.9543 L 171.48514 168.08328 L 167.56238 165.30929 L 157.20126 171.09498 L 151.23935 167.96752 L 158.24616 163.92694 L 157.00747 163.92694 L 155.63391 163.92694 L 141.82494 163.92694 L 141.15573 163.92694 L 140.31857 163.92694 L 137.63811 168.55767 L 134.24865 168.55767 L 130.85868 168.55767 L 128.17822 163.92694 L 127.40049 163.92694 L 126.67237 163.92694 L 112.86133 163.92694 L 112.74764 163.92694 L 110.2496 163.92694 z " />
+  </g>
+</svg>
