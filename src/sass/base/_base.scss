@@ -1,0 +1,65 @@
+@use './abstracts/colors' as *;
+@use './abstracts/variables' as *;
+@use './abstracts/mixins' as *;
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $main-color;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.section-padding {
+  padding: 2rem 2rem;
+}
+
+.section-title {
+  padding-bottom: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+//MEDIA QUERIES
+
+@media($media-medium) {
+  .section-padding {
+      padding: 4rem 3rem;
+  }
+  .section-title {
+    padding-bottom: 4rem;
+  }
+}
+@media($media-large) {
+  html {
+    scroll-padding-top: 8.9rem;
+  }
+  .section-padding {
+      padding: 5rem 4rem;
+  }
+  .section-title {
+    padding-bottom: 5rem;
+  }
+
+}

@@ -1,0 +1,304 @@
+@use './abstracts/colors' as *;
+@use './abstracts/variables' as *;
+@use './abstracts/mixins' as *;
+
+// <weight>: Use a value from 100 to 900
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
+}
+
+.nav-link {
+    color: $secondary-color;
+        font-size: 2rem;
+        text-decoration: none;
+}
+
+.nav-mobile {
+    .logo-text {
+        font-size: 2.8rem;
+    }
+}
+.nav-desktop {
+    .logo-text {
+        font-size: 3.8rem;
+    }
+}
+
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 250;
+    text-transform: uppercase;
+}
+
+.about-us {
+    color: $secondary-color;
+    &__heading {
+        font-size: 1.8rem;
+    }
+    &__text {
+        text-align: justify;
+        line-height: 1.4em;
+        font-weight: 300;
+    }
+}
+
+.separator-row {
+    color: $main-color;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.offer {
+    &__caption {
+        font-size: 1.8rem;
+    }
+}
+.offer__card {
+    &__list-item--inactive {
+        color: $inactive-gray;
+    }
+    &__title {
+        font-size: 2.2rem;
+    }
+    &__price {
+        font-size: 3.4rem;
+        font-weight: 600;
+    }
+    &__list {
+        font-size: 1.6rem;
+    }
+    &__btn {
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+    }
+}
+
+.offer__cards {
+    &__link {
+        &__btn {
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 2.8rem;
+        }
+    }
+}
+
+.footer {
+    &__content {
+        &__heading {
+            font-size: 2.2rem;
+        }
+        &__list {
+            &__item {
+                font-size: 1.4rem;
+                color: $secondary-color;
+            }
+        }
+    }
+    &__date {
+        font-size: 1.6rem;
+    }
+    .logo-text {
+        font-size: 3.8rem;
+    }
+}
+
+.contact {
+    &__form {
+        &__box {
+            font-size: 1.6rem;
+            &__btn {
+                font-family: "Raleway", sans-serif;
+                font-size: 1.6rem;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+        }
+    }
+    &__social {
+        &__list {
+            &__item {
+                font-size: 1.8rem;
+                i {
+                    font-size: 2.4rem;
+                }
+            }
+        }
+        &__heading {
+            font-weight: normal;
+        }
+    }
+    &__popup {
+        &__btn {
+            font-family: "Raleway", sans-serif;
+                font-size: 1.4rem;
+        }
+    }
+}
+
+.not_found {
+    &__text {
+        font-size: 2rem;
+        &__link {
+            text-decoration: none;
+            color: $secondary-color;
+            font-weight: bold;
+        }
+    }
+    &__attribution {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: $inactive-gray;
+    }
+}
+
+//MEDIA QUERIES
+
+@media ($media-medium) {
+    .section-title {
+        font-size: 3rem;
+    }
+    .about-us {
+        &__heading {
+            font-size: 2rem;
+        }
+        &__text {
+            font-size: 1.8rem;
+        }
+    }
+    .separator-row {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .offer {
+        &__caption {
+            font-size: 1.8rem;
+        }
+        &__card {
+            &__title {
+                font-size: 2.4rem;
+            }
+            &__price {
+                font-size: 3.4rem;
+            }
+        }
+    }
+}
+
+@media ($media-large) {
+    .section-title {
+        font-size: 3.2rem;
+    }
+    .about-us {
+        &__heading {
+            font-size: 2.4rem;
+        }
+        &__text {
+            line-height: 1.6em;
+        }
+    }
+    .separator-row {
+        font-size: 3.6rem;
+    }
+    .offer {
+        &__caption {
+            font-size: 2rem;
+        }
+        &__card {
+            &__title {
+                font-size: 2.6rem;
+            }
+            &__price {
+                font-size: 3.6rem;
+            }
+            &__list {
+                font-size: 1.8rem;
+            }
+            &__btn {
+                font-size: 2rem;
+            }
+        }
+        &__cards {
+            &__link {
+                &__btn {
+                    font-size: 2.4rem;
+                }
+            }
+        }
+    }
+    .footer {
+        .logo-text {
+            font-size: 4.4rem;
+        }
+    }
+    .contact {
+        &__form {
+            &__box {
+                &__label {
+                    font-size: 2rem;
+                }
+                &__input, 
+                &__textarea,
+                &__btn {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        &__social {
+            &__list {
+                &__item {
+                    font-size: 2rem;
+                    i {
+                        font-size: 2.8rem;
+                    }
+                }
+            }
+            &__heading {
+                font-size: 2.4rem;
+            }
+        }
+        &__popup {
+            &__text {
+                font-size: 2rem;
+            }
+            &__btn {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .not_found {
+        &__text {
+            font-size: 2.4rem;
+        }
+    }
+}
+
+@media ($media-xlarge) {
+    .section-title {
+        font-size: 3.8rem;
+    }
+    .about-us {
+        &__heading {
+            font-size: 2.8rem;
+        }
+        &__text {
+            font-size: 2rem;
+            line-height: 1.8em;
+        }
+    }
+    .separator-row {
+        font-size: 4.6rem;
+    }
+}

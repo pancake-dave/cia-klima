@@ -1,0 +1,218 @@
+@use './abstracts/colors' as *;
+@use './abstracts/variables' as *;
+@use './abstracts/mixins' as *;
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 4rem;
+    }
+    &__form {
+        position: relative;
+        width: 100%;
+        &__box {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            &__label {
+                padding: 1em 0 .3em;
+                &-warning {
+                    color: $warning-red;
+                }
+                &:first-child {
+                    padding-top: 0;
+                }
+            }
+            &__input {
+                padding: .5em;
+            }
+            &__textarea {
+                padding: 0.5em;
+                resize: vertical;
+            }
+            &__border {
+                border: 1px solid $secondary-color;
+                &:focus-visible {
+                    outline: 2px solid $focus-gray;
+                    border: 1px solid transparent;
+                    background-color: $light-gray;
+                }
+            }
+            &__alert {
+                display: none;
+                padding-top: .5em;
+                align-self: center;
+                color: $warning-red;
+            }
+        }
+    }
+    &__social {
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            row-gap: 1em;
+            &__item {
+                color: $secondary-color;
+                text-decoration: none;
+                transition: color .2s;
+                i {
+                    padding-right: .5em;
+                }
+                &:hover {
+                    color: $inactive-gray;
+                }
+                &:focus-visible {
+                    outline: 2px solid $focus-gray;
+                }
+            }
+        }
+        &__heading {
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+    }
+    &__map {
+        &__frame {
+            height: 300px;
+            width: 100%;
+        }
+    }
+    &__popup {
+        position: absolute;
+        display: none;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 200;
+        &__box {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 3em;
+            background-color: $main-color;
+            border-radius: 8px;
+            box-shadow: 0px 5px 10px rgba(0,0,0, .3);
+        }
+        &__text {
+            padding-bottom: 2em;    
+        }
+    }
+    &__popup__section-shadow {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba(0,0,0,.4);
+        z-index: 100;
+    }
+    &__popup-visible {
+        display: block;
+    }
+}
+
+//MEDIA QUERIES
+
+@media ($media-small) {
+    .contact {
+        &__social {
+            &__list {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                grid-template-rows: 1fr auto;
+                &__item {
+                    &__instagram {
+                        grid-column: 1/2;
+                        grid-row: 1/2;
+                    }
+                    &__facebook {
+                        grid-column: 1/2;
+                        grid-row: 2/3;
+                        padding-bottom: 0;
+                    }
+                    &__phone {
+                        grid-column: 2/3;
+                        grid-row: 1/2;
+                    }
+                    &__email {
+                        grid-column: 2/3;
+                        grid-row: 2/3;
+                    }
+                }
+            }
+        }
+        &__map {
+            &__frame {
+                height: 350px;
+            }
+        }
+    }
+}
+
+@media ($media-medium) {
+    .contact {
+        &__social {
+            &__list {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                grid-template-rows: 1fr auto;
+            }
+        }
+        &__map {
+            &__frame {
+                height: 420px;
+            }
+        }
+    }
+}
+
+@media ($media-large) {
+    .contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: start;
+        &__box {
+            padding-bottom: 8rem;
+            
+        }
+        &__form {
+            flex-basis: 55%;
+            order: 1;
+            &__box {
+                &__label {
+                    padding: .8em 0 .3em;
+                }
+                &__alert {
+                    padding-top: .8em;
+                }
+            }
+        }
+        &__social {
+            padding-bottom: 0;
+            order: 4;
+            &__list {
+                grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+                row-gap: 2em;
+            }
+            &__heading {
+                flex-basis: 100%;
+                order: 3;
+                padding-bottom: 5rem;
+            }
+        }
+        &__map {
+            flex-basis: 40%;
+            order: 2;
+        }
+        
+    }
+}

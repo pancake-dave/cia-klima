@@ -1,0 +1,129 @@
+@use './abstracts/colors' as *;
+@use './abstracts/variables' as *;
+@use './abstracts/mixins' as *;
+
+.nav-mobile {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: calc(-100% + 6rem);
+    background-color: #fff;
+    transition: top .3s;
+    z-index: 100;
+    &__items {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        top: 45%;
+        transform: translateY(-50%);
+        height: 60%;
+    }
+    &__link {
+        padding: .6em 2em;
+    }
+    &__logo {
+        position: absolute;
+        bottom: 1.3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        .logo-icon {
+            height: 3rem;
+        }
+    }
+}
+
+.nav-mobile--active {
+    top: 0;
+}
+
+.nav-desktop { 
+    position: fixed;
+    width: 100%;
+    display: none;
+    padding: 0 3rem;
+    z-index: 10;
+    background-color: #fff;
+    &__items {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+    }
+    &__link {
+        position: relative;
+        height: 9rem;
+        padding: 3.6rem 2.8rem;
+        transition: color .2s;
+        transition-delay: 100ms;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 101%;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .2s;
+            transition-delay: 150ms;
+            background-color: $secondary-color;
+            z-index: -1;
+        }
+        &:hover {
+            color: $main-color;
+            &::before {
+                transform-origin: left;
+                transform: scaleX(1);
+            }
+        }
+    }
+    &__logo {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        .logo-icon {
+            height: 4rem;
+        }
+    }
+}
+
+.nav-link {
+    &:focus-visible {
+        outline: 2px solid $focus-gray;
+    }
+}
+
+.nav-desktop__link--active {
+    color: $main-color;
+    &::before {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+}
+
+//MEDIA QUERIES
+
+@media (min-height: 450px) {
+    .nav-mobile {
+        &__link {
+            padding: 1.5em 2em;
+        }
+    }
+}
+
+@media ($media-large) {
+    .burger-btn {
+        display: none;
+    }
+    .nav-mobile {
+        display: none;
+    }
+    .nav-desktop {
+        display: block;
+        padding: 0 4rem;
+    }
+}
