@@ -122,13 +122,16 @@
             flex-direction: row;
             column-gap: 2em;
         }
-        &__img {
-            flex-basis: 50%;
-            
-        }
+        // &__img {
+        //     flex-basis: 50%;
+        //     // width: 50%;
+        // }
         &__heading {
             align-self: start;
             padding-top: 0;
+        }
+        &__img-box {
+            flex-basis: 50%;
         }
         &__text-box {
             flex-basis: 50%;

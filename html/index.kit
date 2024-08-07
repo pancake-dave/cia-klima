@@ -3,7 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Chcesz uciec od zgiełku miasta? Poznaj nasz piękny park i zanurz się w relaksującym klimacie lasu.">
+		<meta
+			name="description"
+			content="Zadbaj o swój komfort wybierając profesjonalny montaż i serwis klimatyzacji Wrocław i okolice" />
 		<title>Klimatyzacja - Comfortable Indoor Air</title>
 		<!-- @include "head.kit" -->
 	</head>
@@ -14,10 +16,14 @@
 			<div class="header__hero section-padding home">
 				<div class="header__hero--shadow"></div>
 				<div class="header__hero__text wrapper">
-					<p class="header__hero__title">Forest Group</p>
+					<p class="header__hero__title">CIA - placeholder</p>
 					<h1 class="header__hero__caption">
-						Najpiękniejszy park w Twojej okolicy!
+						Profesjonalny montaż klimatyzacji
 					</h1>
+				</div>
+				<div class="header__hero__scroll-box">
+					<p class="header__hero__scroll-text">Poznaj nasz zespół</p>
+					<div class="header__hero__scroll-btn-box"></div>
 				</div>
 			</div>
 		</header>
@@ -25,12 +31,14 @@
 			<section class="about-us section-padding section" id="about-us">
 				<h2 class="about-us__title section-title">o nas</h2>
 				<div class="about-us__content wrapper">
-					<img
-						src="dist/img/waters_small.jpg"
-						alt="Zdjęcie małej, kamiennej wysepki na jeziorze, w tle zielony las"
-						class="about-us__img" />
+					<div class="about-us__img-box">
+						<img
+							src="dist/img/about_us.jpg"
+							alt="Zdjęcie naszego zespołu"
+							class="about-us__img" />
+					</div>
 					<div class="about-us__text-box">
-						<h3 class="about-us__heading">Niezapomniane przygody</h3>
+						<h3 class="about-us__heading">Agenci Twojego komfortu</h3>
 						<p class="about-us__text">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -43,7 +51,11 @@
 					</div>
 				</div>
 			</section>
-			<section class="separator-row section-padding">
+			<section class="projects section-padding">
+				<h2 class="projects__title section-title">Zrealizowane projekty</h2>
+				<div class="projects_gallery-box"></div>
+			</section>
+			<!-- <section class="separator-row section-padding">
 				<div class="separator-row__hero-shadow"></div>
 				<div class="separator-row__content wrapper">
 					<div class="separator-row__content__text-box">
@@ -52,10 +64,10 @@
 						</p>
 					</div>
 				</div>
-			</section>
+			</section> -->
 			<section class="offer section-padding section" id="offer">
 				<h2 class="offer__title section-title">oferta</h2>
-				<p class="offer__caption">Wybierz jedną z naszych wspaniałych ofert!</p>
+				<p class="offer__caption">Sprawdź polecane przez nas urządzenia</p>
 				<div class="wrapper offer__cards">
 					<div class="offer__card offer__card__one">
 						<p class="offer__card__title offer__card__item">Demo</p>
@@ -80,7 +92,11 @@
 								<i class="fa-solid fa-minus"></i>opcja poza pakietem
 							</li>
 						</ul>
-						<button aria-label="Wybierz opcję Demo" class="offer__card__btn standard-btn">Wybierz</button>
+						<button
+							aria-label="Wybierz opcję Demo"
+							class="offer__card__btn standard-btn">
+							Wybierz
+						</button>
 					</div>
 
 					<div class="offer__card offer__card__two">
@@ -105,7 +121,11 @@
 								<i class="fa-solid fa-minus"></i>opcja poza pakietem
 							</li>
 						</ul>
-						<button aria-label="Wybierz opcję Standard" class="offer__card__btn standard-btn">Wybierz</button>
+						<button
+							aria-label="Wybierz opcję Standard"
+							class="offer__card__btn standard-btn">
+							Wybierz
+						</button>
 					</div>
 					<div class="offer__card offer__card__three">
 						<p class="offer__card__title offer__card__item">Premium</p>
@@ -127,14 +147,33 @@
 								<i class="fa-solid fa-check"></i>opcja w pakiecie
 							</li>
 						</ul>
-						<button aria-label="Wybierz opcję Premium" class="offer__card__btn standard-btn">Wybierz</button>
+						<button
+							aria-label="Wybierz opcję Premium"
+							class="offer__card__btn standard-btn">
+							Wybierz
+						</button>
 					</div>
-					<a aria-label="Przejdź do podstrony z pełną ofertą" href="offers.html" class="offer__cards__link">
+					<a
+						aria-label="Przejdź do podstrony z pełną ofertą"
+						href="offers.html"
+						class="offer__cards__link">
 						<button
 							aria-hidden="true"
 							tabindex="-1"
 							class="offer__cards__link__btn standard-btn">
-							Poznaj również nasze pozostałe propozycje!<i
+							Dowiedz się więcej o naszych usługach<i
+								class="fa-solid fa-arrow-up-right-from-square"></i>
+						</button>
+					</a>
+					<a
+						aria-label="Przejdź do podstrony z pełną ofertą"
+						href="offers.html"
+						class="offer__cards__link">
+						<button
+							aria-hidden="true"
+							tabindex="-1"
+							class="offer__cards__link__btn standard-btn">
+							Przejdź do katalogów z cenami<i
 								class="fa-solid fa-arrow-up-right-from-square"></i>
 						</button>
 					</a>
