@@ -30,7 +30,6 @@ const handleDesktopNav = (e) => {
 			];
 			if (conditions.includes(true)) {
 				observerEnabled = true;
-				console.log('test ok');
 			}
 		});
 	});
@@ -61,7 +60,7 @@ const handleIntersection = (entries) => {
 const observer = new IntersectionObserver(handleIntersection, {
 	root: null,
 	rootMargin: "0px",
-	threshold: 1,
+	threshold: .6,
 });
 
 const currentDate = () => {
