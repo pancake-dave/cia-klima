@@ -45,8 +45,20 @@ body {
 .header {
     color: $white;
     &__hero {
-        &__scroll-text {
-            color: $white;
+        &__top-row-item {
+            padding: 1em;
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+        &__title {
+            font-size: 1.8rem;
+        }
+        &__caption {
+            font-size: 2.6rem;
+        }
+        &__contact-btn {
+            font-size: 1.8rem;
+            font-weight: 600;
         }
     }
 }
@@ -181,9 +193,32 @@ body {
 
 //MEDIA QUERIES
 
+@media ($media-small) {
+    .header {
+        &__hero {
+            &__top-row-item {
+                font-size: 2.2rem;
+            }
+            &__title {
+                font-size: 2rem;
+            }
+            &__caption {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
 @media ($media-medium) {
     .section-title {
         font-size: 3rem;
+    }
+    .header {
+        &__hero {
+            &__contact-btn {
+                font-size: 2rem;
+            }
+        }
     }
     .about-us {
         &__heading {
@@ -215,6 +250,22 @@ body {
 @media ($media-large) {
     .section-title {
         font-size: 3.2rem;
+    }
+    .header {
+        &__hero {
+            &__top-row-item {
+                font-size: 2.6rem;
+            }
+            &__title {
+                font-size: 2.6rem;
+            }
+            &__caption {
+                font-size: 4rem;
+            }
+            &__contact-btn {
+                font-size: 2.2rem;
+            }
+        }
     }
     .about-us {
         &__heading {
@@ -311,6 +362,19 @@ body {
     }
     .section-title {
         font-size: 3.8rem;
+    }
+    .header {
+        &__hero {
+            &__top-row-item {
+                font-size: 3rem;
+            }
+            &__title {
+                font-size: 3rem;
+            }
+            &__caption {
+                font-size: 4.8rem;
+            }
+        }
     }
     .about-us {
         &__heading {

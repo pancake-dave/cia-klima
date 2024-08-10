@@ -9,7 +9,7 @@
     padding: 1em;
     background: none;
     border: 1px solid transparent;
-    z-index: 1000;
+    z-index: 1001;
     cursor: pointer;
     &:focus-visible {
         outline: 2px solid $focus-gray;    
@@ -54,6 +54,49 @@
             transform: rotate(-90deg);
         }
     }
+}
+
+.header__hero__scroll-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    border: 2px solid $white;
+    border-radius: 50%;
+    img {
+        height: 4rem;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        width: 6rem;
+        height: 6rem;
+        border: 2px solid $white;
+        border-radius: 50%;
+        transition: transform 2s;
+        animation: 2.5s infinite chevron-pulse;
+    }
+}
+
+@keyframes chevron-pulse {
+    70% {
+        scale: 1;
+        opacity: 1;
+    }
+    100% {
+        scale: 2;
+        opacity: 0;
+    }
+}
+
+.header__hero__contact-btn {
+    display: inline;
+    padding: .8em 1.6em;
+    background-color: $logo-blue;
+    border: 1px solid transparent;
+    border-radius: 5px;
 }
 
 .offer__card__btn {
