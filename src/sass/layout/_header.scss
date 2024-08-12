@@ -12,7 +12,6 @@
         grid-template-rows: repeat(5, 1fr);
         height: calc(100vh - 6rem);
         height: calc(100svh - 6rem);
-        // z-index: -5;
         &--shadow {
             @include hero-shadow;
         }
@@ -29,7 +28,7 @@
         &__img {
             width: 100%;
             height: 100%;
-            background-position: center;
+            background-position: 50% 15%;
             background-size: cover;
         }
         &__img-1 {
@@ -64,10 +63,13 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
+            font-family: "Zen Dots", sans-serif;
+            // font-family: "Montserrat", sans-serif;
         }
         &__contact-box {
             grid-row: 4/5;
             align-self: self-start;
+            margin-bottom: 1rem;
             padding-top: 3rem;
             text-align: center;
             z-index: 100;

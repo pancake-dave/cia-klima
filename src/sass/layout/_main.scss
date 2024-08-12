@@ -26,6 +26,56 @@
     &__heading {
         padding: 1em 0;
     }
+    &__link {
+        @include focus-outline;
+        &__ico {
+            //?
+        }
+    }
+}
+
+// PROJECTS
+
+.projects {
+    background-color: $light-gray;
+    &__gallery {
+        &__card {
+            background-position: center;
+            background-size: cover;
+            @include focus-outline;
+        }
+        &__card_1 {
+            background-image: url("../../dist/img/projects/project_1.jpg");
+        }
+        &__card_2 {
+            background-image: url("../../dist/img/projects/project_2.jpg");
+        }
+        &__card_3 {
+            background-image: url("../../dist/img/projects/project_3.jpg");
+        }
+        &__card_4 {
+            background-image: url("../../dist/img/projects/project_4.jpg");
+        }
+        &__card_5 {
+            background-image: url("../../dist/img/projects/project_5.jpg");
+        }
+    }
+    &__caption {
+        &__box {
+            text-align: center;
+        }
+        &__link {
+            position: relative;
+            @include focus-outline;
+            &__ico {
+                position: absolute;
+                right: -1.6rem;
+                bottom: 50%;
+                transform: translateY(50%);
+                height: 1.6rem;
+            }
+        }
+    }
 }
 
 // SEPARATOR ROW
@@ -34,7 +84,7 @@
     position: relative;
     display: flex;
     height: 25vh;
-    background-image: url("../../dist/img/girl_small.jpg");
+    background-image: url("../../dist/img/sep_bar/sep_s.jpg");
     background-position: center;
     background-size: 100%;
     transition: background-size 2s;
@@ -97,6 +147,20 @@
 }
 
 @media ($media-medium) {
+    .projects {
+        &__gallery {
+            &__box {
+                margin-bottom: 2rem;
+            }
+        }
+        &__caption {
+            &__link {
+                &__ico {
+                    height: 1.8rem;
+                }
+            }
+        }
+    }
     .separator-row {
         &__content__text {
             padding: 1em 4em;
@@ -122,10 +186,6 @@
             flex-direction: row;
             column-gap: 2em;
         }
-        // &__img {
-        //     flex-basis: 50%;
-        //     // width: 50%;
-        // }
         &__heading {
             align-self: start;
             padding-top: 0;
@@ -138,9 +198,23 @@
             align-self: start;
          }
     }
+    .projects {
+        &__gallery {
+            &__box {
+                margin-bottom: 3rem;
+            }
+        }
+        &__caption {
+            &__link {
+                &__ico {
+                    right: -1.8rem;
+                }
+            }
+        }
+    }
     .separator-row {
         height: 40vh;
-        background-image: url("../../dist/img/girl_large.jpg");
+        background-image: url("../../dist/img/sep_bar/sep_m.jpg");
     }
     .offer__caption {
         padding-bottom: 5rem;
@@ -153,8 +227,18 @@
             column-gap: 4em;
         }
     }
+    .projects {
+        &__caption {
+            &__link {
+                &__ico {
+                    height: 2rem;
+                    right: -2.2rem;
+                }
+            }
+        }
+    }
     .separator-row {
-        background-image: url("../../dist/img/girl_xlarge.jpg");
+        background-image: url("../../dist/img/sep_bar/sep_l.jpg");
     }
     .offer__cards {
         justify-content: center;

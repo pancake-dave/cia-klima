@@ -2,19 +2,28 @@
 @use './abstracts/variables' as *;
 @use './abstracts/mixins' as *;
 
-// <weight>: Use a value from 100 to 900
-.raleway {
+.raleway-font {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
   }
 
-.zen-dots-regular {
-    font-family: "Zen Dots", sans-serif;
-    font-weight: 400;
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-font {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
     font-style: normal;
   }
+
+.zen-dots-regular-font {
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 html {
     font-size: 62.5%;
@@ -57,8 +66,10 @@ body {
             font-size: 2.6rem;
         }
         &__contact-btn {
+            font-family: "Raleway", sans-serif;
             font-size: 1.8rem;
             font-weight: 600;
+            color: $white;
         }
     }
 }
@@ -79,12 +90,34 @@ body {
         line-height: 1.4em;
         font-weight: 300;
     }
+    &__link {
+        text-decoration: none;
+        color: $black;
+        font-weight: 700;
+    }
+}
+
+.projects {
+    &__caption {
+        &__text {
+            font-size: 1.6rem;
+        }
+        &__link {
+            text-decoration: none;
+            color: $black;
+            font-weight: 700;
+        }
+    }
 }
 
 .separator-row {
     color: $main-color;
-    font-size: 2rem;
-    font-weight: 700;
+    &__content {
+        &__text {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
 }
 
 .offer {
@@ -130,16 +163,18 @@ body {
         &__list {
             &__item {
                 font-size: 1.4rem;
-                color: $secondary-color;
+            }
+            &__link {
+                color: $black;
             }
         }
     }
     &__date {
         font-size: 1.6rem;
     }
-    .logo-text {
-        font-size: 3.8rem;
-    }
+    // .logo-text {
+    //     font-size: 3.8rem;
+    // }
 }
 
 .contact {
@@ -228,9 +263,17 @@ body {
             font-size: 1.8rem;
         }
     }
+    .projects {
+        &__caption__text {
+            font-size: 1.8rem;
+        }
+    }
     .separator-row {
-        font-size: 3rem;
-        font-weight: 700;
+        &__content {
+            &__text {
+                font-size: 3rem;
+            }
+        }
     }
     .offer {
         &__caption {
@@ -276,7 +319,11 @@ body {
         }
     }
     .separator-row {
-        font-size: 3.6rem;
+        &__content {
+            &__text {
+                font-size: 3.6rem;
+            }
+        }
     }
     .offer {
         &__caption {
@@ -304,11 +351,11 @@ body {
             }
         }
     }
-    .footer {
-        .logo-text {
-            font-size: 4.4rem;
-        }
-    }
+    // .footer {
+    //     .logo-text {
+    //         font-size: 4.4rem;
+    //     }
+    // }
     .contact {
         &__form {
             &__box {
@@ -385,7 +432,16 @@ body {
             line-height: 1.8em;
         }
     }
+    .projects {
+        &__caption__text {
+            font-size: 2rem;
+        }
+    }
     .separator-row {
-        font-size: 4.6rem;
+        &__content {
+            &__text {
+                font-size: 4.6rem;
+            }
+        }
     }
 }

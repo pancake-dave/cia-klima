@@ -11,9 +11,7 @@
     border: 1px solid transparent;
     z-index: 1001;
     cursor: pointer;
-    &:focus-visible {
-        outline: 2px solid $focus-gray;    
-    }
+    @include focus-outline;
     &__box {
         position: relative;
         width: 40px;
@@ -78,6 +76,7 @@
         transition: transform 2s;
         animation: 2.5s infinite chevron-pulse;
     }
+    @include focus-outline;
 }
 
 @keyframes chevron-pulse {
@@ -92,11 +91,35 @@
 }
 
 .header__hero__contact-btn {
-    display: inline;
+    position: relative;
     padding: .8em 1.6em;
     background-color: $logo-blue;
     border: 1px solid transparent;
     border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    &::before {
+        position: absolute;
+        content: "";
+        left: -40%;
+        top: 50%;
+        transform: translateY(-65%);
+        rotate: (35deg);
+        height: 250%;
+        width: 12%;
+        background-color: $glass;
+        transition: left .45s ease-in-out;
+    }
+    &:hover {
+        &::before {
+            left: 90%;
+        }
+    }
+    &:focus-visible {
+        outline: 3px solid $focus-gray;
+        background-color: #fff;
+        color: $logo-blue;
+       }
 }
 
 .offer__card__btn {

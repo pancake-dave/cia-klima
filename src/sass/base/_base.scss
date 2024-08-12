@@ -42,11 +42,8 @@ body {
 .button-link {
   text-decoration: none;
   color: $white;
-  &:focus-visible {
-   outline: 2px solid $focus-gray;    
-  }
+  @include focus-outline;
 }
-
 
 //MEDIA QUERIES
 

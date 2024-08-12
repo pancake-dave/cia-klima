@@ -10,4 +10,17 @@ $(document).ready(function(){
         arrows: false,
         mobileFirst: true,
     });
+    $('.projects__gallery__box').slick({
+        pauseOnHover: true,
+        pauseOnFocus: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        mobileFirst: true,
+        centerMode: true,
+        variableWidth: true,
+    });
+
   });

@@ -93,9 +93,7 @@
 }
 
 .nav-link {
-    &:focus-visible {
-        outline: 2px solid $focus-gray;
-    }
+    @include focus-outline;
 }
 
 .nav-desktop__link--active {
