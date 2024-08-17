@@ -29,7 +29,7 @@
     &__link {
         @include focus-outline;
         &__ico {
-            //?
+            height: 1.4rem;
         }
     }
 }
@@ -65,13 +65,8 @@
             text-align: center;
         }
         &__link {
-            position: relative;
             @include focus-outline;
             &__ico {
-                position: absolute;
-                right: -1.6rem;
-                bottom: 50%;
-                transform: translateY(50%);
                 height: 1.6rem;
             }
         }
@@ -147,6 +142,13 @@
 }
 
 @media ($media-medium) {
+    .about-us {
+        &__link {
+            &__ico {
+                height: 1.8rem;
+            }
+        }
+    }
     .projects {
         &__gallery {
             &__box {
@@ -225,6 +227,11 @@
     .about-us {
         &__content {
             column-gap: 4em;
+        }
+        &__link {
+            &__ico {
+                height: 2rem;
+            }
         }
     }
     .projects {
