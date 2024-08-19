@@ -126,18 +126,12 @@ body {
     }
 }
 .offer__card {
-    &__list-item--inactive {
-        color: $inactive-gray;
-    }
     &__title {
         font-size: 2.2rem;
     }
     &__price {
-        font-size: 3.4rem;
+        font-size: 2.2rem;
         font-weight: 600;
-    }
-    &__list {
-        font-size: 1.6rem;
     }
     &__btn {
         font-family: "Raleway", sans-serif;
@@ -172,9 +166,6 @@ body {
     &__date {
         font-size: 1.6rem;
     }
-    // .logo-text {
-    //     font-size: 3.8rem;
-    // }
 }
 
 .contact {
@@ -284,7 +275,7 @@ body {
                 font-size: 2.4rem;
             }
             &__price {
-                font-size: 3.4rem;
+                font-size: 2.4rem;
             }
         }
     }
@@ -334,13 +325,10 @@ body {
                 font-size: 2.6rem;
             }
             &__price {
-                font-size: 3.6rem;
-            }
-            &__list {
-                font-size: 1.8rem;
+                font-size: 2.6rem;
             }
             &__btn {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
         }
         &__cards {

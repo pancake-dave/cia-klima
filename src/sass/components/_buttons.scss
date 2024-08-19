@@ -156,16 +156,36 @@
 }
 
 .standard-btn {
+    position: relative;
     background-color: transparent;
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow: 0px 5px 10px rgba(0,0,0, .3);
-    transition: background-color .3s, box-shadow .3s;
+    transition: background-color .3s, box-shadow .3s, color .3s;
+    overflow: hidden;
     cursor: pointer;
+    &::before {
+        position: absolute;
+        content: "";
+        left: -60%;
+        top: 50%;
+        transform: translateY(-65%);
+        rotate: (35deg);
+        height: 250%;
+        width: 12%;
+        background-color: $glass;
+        transition: left .45s ease-in-out;
+    }
+    &:hover {
+        &::before {
+            left: 90%;
+        }
+    }
     &:hover, &:focus-visible {
-        background-color: $green;       
-        box-shadow: 0px 5px 10px rgba(42, 222, 114, .7);
+        background-color: $logo-blue;       
+        box-shadow: 0px 5px 10px $logo-blue;
         outline: none;
+        color: $white;
     }
 }
 

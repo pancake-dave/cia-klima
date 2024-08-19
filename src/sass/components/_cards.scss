@@ -10,31 +10,68 @@
     background-color: $light-gray;
 }
 
+// .offer__card {
+//     width: 270px;
+//     height: 400px;
+//     margin-bottom: 2rem;
+//     // display: flex;
+//     // flex-direction: column;
+//     // justify-content: center;
+//     // align-items: center;
+//     border: 1px solid transparent;
+//     border-radius: 8px;
+//     box-shadow: 0px 5px 10px rgba(0,0,0, .3);
+//     &__img {
+//         width: 80%;
+        
+
+//     }
+//     &__item {
+//         padding-bottom: 1em;
+//     }
+//     &__list {
+//         list-style: none;
+//     }
+//     &__list-item {
+//         padding-bottom: .5em;
+//         .fa-check {
+//             color: $green;
+//         }
+//         i {
+//             padding-right: .5em;
+//         }
+//     }
+// }
+
 .offer__card {
     width: 270px;
     height: 400px;
     margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
     align-items: center;
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow: 0px 5px 10px rgba(0,0,0, .3);
+    &__img {
+        width: 80%;
+        max-height: 120px;
+        object-fit: contain;
+        grid-row: 1/2;
+        margin: 0 auto;
+        padding-top: 1.5em;
+    }
+    &__text {
+        text-align: center;
+        grid-row: 2/3;
+    }
+    &__btn {
+        grid-row: 3/4;
+        width: 80%;
+        margin: 0 auto;
+    }
     &__item {
         padding-bottom: 1em;
-    }
-    &__list {
-        list-style: none;
-    }
-    &__list-item {
-        padding-bottom: .5em;
-        .fa-check {
-            color: $green;
-        }
-        i {
-            padding-right: .5em;
-        }
     }
 }
 
@@ -43,5 +80,18 @@
 @media ($media-medium) {
     .offer__card {
         height: 410px;
+        &__title {
+            padding-top: .8em;
+        }
+    }
+}
+
+@media ($media-large) {
+    .offer__card {
+        height: 430px;
+        width: 290px;
+        &__title {
+            padding-top: 1em;
+        }
     }
 }
