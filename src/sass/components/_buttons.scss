@@ -142,8 +142,9 @@
         outline: none;
     }
     &:focus-visible > &__btn {
-            background-color: $green;       
-            box-shadow: 0px 5px 10px rgba(42, 222, 114, .7);
+        color: $white;
+            background-color: $logo-blue;       
+            box-shadow: 0px 5px 10px $logo-blue;
             outline: none;
         }
     &__btn {
@@ -174,7 +175,7 @@
         height: 250%;
         width: 12%;
         background-color: $glass;
-        transition: left .45s ease-in-out;
+        transition: left .4s ease-in-out;
     }
     &:hover {
         &::before {
