@@ -82,7 +82,7 @@
     background-image: url("../../dist/img/sep_bar/sep_s.jpg");
     background-position: center;
     background-size: 100%;
-    transition: background-size 2s;
+    transition: background-size 2s .1s;
     &:hover {
         background-size: 125%;
     }
